@@ -73,9 +73,9 @@ need a file for each species name (can make a for loop to touch the reads to the
 ```
 mkdir sorted_reads/
 
-species=$(grep "^+" test.fastq | cut -d '.' -f 1 | cut -d '_' -f 2 | sort | uniq -d)
+species=$(grep "^+" test.fastq | cut -d '.' -f 1 | cut -d '+' -f 2 | sort | uniq -d)
 
-for animal in $species; do grep -A 1 "$animal" test.fastq > sorted_reads//$animal.txt; done
+for animal in $species; do grep -A 4 "$animal" test.fastq > sorted_reads//$animal.txt; done
 ```
 make new directory but don't change yet since test.fastq is in pdsb, not sorted
 
