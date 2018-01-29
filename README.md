@@ -3,8 +3,7 @@
 # 1. Get the data files
 Download the following data files from the internet using the curl command: http://eaton-lab.org/pdsb/test.fastq.gz and http://eaton-lab.org/pdsb/iris-data-dirty.csv. Use the less or zless commands to look at the files. Then use the head command to print the first 5 lines from each file as output.
 ```
-curl http://eaton-lab.org/pdsb/test.fastq.gz > test.fastq.gq
-gunzip test.fastq.gz
+curl http://eaton-lab.org/pdsb/test.fastq.gz > test.fastq.gz
 curl http://eaton-lab.org/pdsb/iris-dirty-data.csv > iris-dirty-data.csv
 zless test.fastq.gz
 zless iris-dirty-data.csv
