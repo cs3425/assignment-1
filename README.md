@@ -87,7 +87,7 @@ now have array with species names! so have to loop through these; in loop must g
 `grep -A 1 cyathophylla test.fastq`
 would get the relevant lines; so have to do this in a loop and write it to file by same name 
 
-#sources
+# Sources
 
 https://www.computerhope.com/unix/uuniq.htm
 https://www.computerhope.com/unix/ucut.htm
